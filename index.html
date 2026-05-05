@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Digest — Setting Up</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0c0c0f;
+    color: #e8e4d9;
+    font-family: 'JetBrains Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 24px;
+  }
+  h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(48px, 10vw, 96px);
+    font-weight: 900;
+    background: linear-gradient(135deg, #e8e4d9 30%, #c9a84c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 24px;
+  }
+  p { color: #7a7870; font-size: 13px; letter-spacing: 0.1em; line-height: 1.8; }
+  .dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #c9a84c;
+    margin: 32px auto;
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.4); }
+  }
+</style>
+</head>
+<body>
+  <h1>The Digest</h1>
+  <div class="dot"></div>
+  <p>YOUR DAILY BRIEFING IS BEING SET UP</p>
+  <p style="margin-top:12px">First edition arrives tomorrow at 7:00 AM IST</p>
+  <p style="margin-top:8px">Healthcare · Pharma · AI · Venture Capital</p>
+</body>
+</html>
